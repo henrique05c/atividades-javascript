@@ -4,8 +4,8 @@ let salario;
 let abono;
 let novosalario;
 
-salario = leia.questionFloat("Informe o salario: ")
-abono = leia.questionFloat("Informe o abono: ")
+salario = leia.questionFloat("\nInforme o salario: ")
+abono = leia.questionFloat("\nInforme o abono: ")
 
 novosalario = salario + abono
 
@@ -14,4 +14,4 @@ const formatado = new Intl.NumberFormat('pt-BR', {
   currency: 'BRL'
 }).format(novosalario);
 
-console.log(`Seu novo salario: ${formatado}`)
+console.log(`\nSeu novo salario: ${formatado}`)
