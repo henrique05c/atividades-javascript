@@ -1,10 +1,10 @@
-import readlineSync from "readline-sync";
+import readlinesync = require("readline-sync");
 
 const numeros: Set<number> = new Set([2, 5, 1, 3, 4, 9, 7, 8, 10, 6]);
 
 let numeroDigitado: number;
 
-numeroDigitado = readlineSync.questionInt("Digite o numero que voce deseja encontrar: ");
+numeroDigitado = readlinesync.questionInt("Digite o numero que voce deseja encontrar: ");
 
 if (numeros.has(numeroDigitado)) {
     console.log(`O numero ${numeroDigitado} foi encontrado!`);
